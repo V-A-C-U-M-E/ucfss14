@@ -149,10 +149,6 @@ research-sim-ui-sim-cost = ESTIMATED SIMULATING COST: {$NUM}
 research-sim-ui-selected-ref-conflict = Conflicts with the selected reference property.
 research-sim-ui-selected-targ-conflict = Conflicts with the selected target property.
 
-research-sim-already-inserted = The simulator already has data inserted.
-research-sim-refused = The simulator refuses the empty report.
-research-sim-refuses = {CAPITALIZE(THE($SCANNER))} refuses {THE($PAPER)}.
-
 research-sim-status-ready = STATUS: READY
 research-sim-status-commencing = STATUS: COMMENCING SIMULATION
 research-sim-status-pick-ready = STATUS: SELECT A RECIPE COMPONENT
