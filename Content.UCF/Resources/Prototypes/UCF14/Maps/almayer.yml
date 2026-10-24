@@ -1,0 +1,45 @@
+- type: gameMap
+  id: UCFAlmayer
+  mapName: Almayer
+  mapPath: /Maps/UCF14/Ships/almayer.yml
+  minPlayers: 0
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    Almayer:
+      stationProto: StandardUNMCWarship
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'UNS Almayer'
+      - type: StationJobs
+        availableJobs:
+          CMCommandingOfficer: [1, 1]
+          CMExecutiveOfficer: [1, 1]
+          CMStaffOfficer: [4, 4]
+          CMSeniorEnlistedAdvisor: [2, 2]
+          CMChiefMP: [1, 1]
+          CMMilitaryWarden: [1, 1]
+          CMMilitaryPolice: [7, 10]
+          CMUJobINDFORProvostInspector: [1, 1]
+          CMAuxiliarySupportOfficer: [1, 1]
+          CMIntelOfficer: [4, 4]
+          CMPilotDropship: [1, 1]
+          CMPilotGunship: [1, 1]
+          CMDropshipCrewChief: [2, 2]
+          CMChiefEngineer: [1, 1]
+          CMMaintTech: [3, 3]
+          CMCMO: [1, 1]
+          CMDoctor: [6, 6]
+          CMNurse: [4, 6]
+          CMQuartermaster: [1, 1]
+          CMCargoTech: [4, 4]
+          CMMessTech: [1, 1]
+          CMSquadLeader: [4, 4]
+          CMFireteamLeader: [8, 8]
+          CMSmartGunOperator: [4, 4]
+          CMWeaponsSpecialist: [4, 4]
+          CMCombatTech: [8, 16]
+          CMHospitalCorpsman: [8, 20]
+          CMRifleman: [-1, -1]
+          CMCorrespondent: [2, 2]
+          CMLiaison: [1, 1]
