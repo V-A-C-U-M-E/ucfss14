@@ -9,6 +9,8 @@
   <!-- CMU14: compile integration coverage alongside CMU-owned features. -->
   <ItemGroup>
     <Compile Include="..\Content.CMU\IntegrationTests\**\*.cs" Link="CMU14\%(RecursiveDir)%(Filename)%(Extension)" />
+    <!-- UCF14 -->
+    <Compile Include="..\Content.UCF\IntegrationTests\**\*.cs" Link="UCF14\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" />

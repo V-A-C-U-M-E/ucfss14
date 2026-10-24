@@ -233,6 +233,12 @@ public static class ServerPackaging
             new HashSet<string>(),
             cancel: cancel);
 
+        await RobustSharedPackaging.DoResourceCopy( // UCF14
+            Path.Combine(contentDir, "Content.UCF", "Resources"),
+            inputPassResources,
+            new HashSet<string>(),
+            cancel: cancel);
+
         if (hybridAcz)
         {
             inputPassCore.InjectFileFromDisk("Content.Client.zip", Path.Combine("release", "SS14.Client.zip"));

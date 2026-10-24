@@ -9,6 +9,8 @@
   <!-- CMU14: compile tests alongside their CMU-owned feature sources. -->
   <ItemGroup>
     <Compile Include="..\Content.CMU\Tests\**\*.cs" Link="CMU14\%(RecursiveDir)%(Filename)%(Extension)" />
+    <!-- UCF14 -->
+    <Compile Include="..\Content.UCF\Tests\**\*.cs" Link="UCF14\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" />

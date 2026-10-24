@@ -107,7 +107,7 @@ public static partial class PoolManager
             {
                 LoadConfigAndUserData = false,
                 LoadContentResources = !settings.NoLoadContent,
-                MountOptions = new MountOptions(dirMounts: ["../../Content.CMU/Resources"], zipMounts: []),
+                MountOptions = new MountOptions(dirMounts: ["../../Content.CMU/Resources", "../../Content.UCF/Resources"], zipMounts: []), // UCF14
             },
         };
 
