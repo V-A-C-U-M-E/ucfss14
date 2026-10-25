@@ -113,6 +113,7 @@
       types:
         Slash: 30
   - type: Synth
+    stunResistance: 2.5
   - type: ComplexInteraction
   - type: Climbing
   - type: Language

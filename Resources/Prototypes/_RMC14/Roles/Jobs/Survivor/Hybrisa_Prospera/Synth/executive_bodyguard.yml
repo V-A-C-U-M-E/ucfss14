@@ -86,6 +86,7 @@
     - type: EquipEntityPreset
       preset: RMCSurvivorPresetHybrisaSynthExecBodyguard
     - type: Synth
+      stunResistance: 3.5
       generation: rmc-species-synth-generation-second
 
 - type: startingGear

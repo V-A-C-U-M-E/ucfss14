@@ -115,6 +115,7 @@
       - ReagentId: RMCSynthBlood
         Quantity: 560
   - type: Synth
+    stunResistance: 2.5
     generation: "rmc-species-synth-generation-first"
     critThreshold: 299
     deadThreshold: 300

@@ -60,6 +60,7 @@
     - type: EquipSurvivorPreset
       preset: RMCSurvivorPresetHybrisaSynthCivilian
     - type: Synth
+      stunResistance: 3.5
       generation: rmc-species-synth-generation-second
 
 - type: startingGear

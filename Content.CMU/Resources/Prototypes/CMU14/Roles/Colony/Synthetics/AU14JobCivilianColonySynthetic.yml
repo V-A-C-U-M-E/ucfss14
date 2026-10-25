@@ -53,6 +53,7 @@
       types:
         Blunt: 35
   - type: Synth
+    stunResistance: 3.5
     generation: "rmc-species-synth-generation-second"
 
   name: au14-job-name-civiliancolonysynthetic

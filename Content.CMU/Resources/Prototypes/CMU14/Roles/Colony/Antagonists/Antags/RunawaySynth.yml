@@ -34,6 +34,7 @@
   components:
   - type: RunawaySynth
   - type: Synth
+    stunResistance: 2.5
     changeBrain: false
     canUseGuns: true
     hideGeneration: true

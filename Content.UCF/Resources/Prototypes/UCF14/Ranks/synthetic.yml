@@ -1,0 +1,5 @@
+- type: rank
+  id: UCFRankSynthetic
+  name: Synthetic
+  prefix: SYN.
+  paygrade: SYN

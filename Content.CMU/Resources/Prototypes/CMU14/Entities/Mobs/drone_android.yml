@@ -44,6 +44,7 @@
     species: DroneAndroid
     voice: AU14WorkingJoeSounds
   - type: Synth
+    stunResistance: 2.5
     canUseGuns: true
     removeComponents: CMUDroneAndroidRemoveComponents
     generation: cmu-species-drone-android-generation

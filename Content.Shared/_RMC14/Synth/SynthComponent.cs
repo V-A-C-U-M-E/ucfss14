@@ -39,7 +39,7 @@ public sealed partial class SynthComponent : Component
     /// The final stun duration (after endurance skill) is divided by this number.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float? StunResistance = 2.5f;
+    public float? StunResistance = 5f; // UCF14
 
     [DataField, AutoNetworkedField]
     public bool CanUseGuns = false;
