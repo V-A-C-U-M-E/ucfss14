@@ -9,6 +9,8 @@ using Content.Shared.CCVar;
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Input;
+using Content.Shared.UCF14.Input;
+using Content.Shared.UCF14.Intents;
 using Content.Shared.Verbs;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
@@ -74,6 +76,7 @@ namespace Content.Client.ContextMenu.UI
 
             CommandBinds.Builder
                 .Bind(EngineKeyFunctions.UseSecondary,  new PointerInputCmdHandler(HandleOpenEntityMenu, outsidePrediction: true))
+                .Bind(UCFKeyFunctions.TileContents, new PointerInputCmdHandler(HandleOpenEntityMenu, outsidePrediction: true)) // UCF14
                 .Register<EntityMenuUIController>();
 
             _xformQuery = _entityManager.GetEntityQuery<TransformComponent>();
@@ -181,7 +184,8 @@ namespace Content.Client.ContextMenu.UI
             if (_stateManager.CurrentState is not GameplayStateBase)
                 return false;
 
-            if (_combatMode.IsInCombatMode(args.Session?.AttachedEntity))
+            if (_combatMode.IsInCombatMode(args.Session?.AttachedEntity) &&
+                !_entityManager.HasComponent<UCFIntentComponent>(args.Session?.AttachedEntity)) // UCF14: intents keep the menu on right-click
                 return false;
 
             var coords = _xform.ToMapCoordinates(args.Coordinates);

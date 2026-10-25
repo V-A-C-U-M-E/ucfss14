@@ -219,6 +219,12 @@ binds:
   type: State
   key: MouseLeft
   canFocus: true
+  mod1: Control
+  mod2: Alt
+- function: UCFTileContents
+  type: State
+  key: MouseLeft
+  canFocus: true
   mod1: Alt
 - function: ThrowItemInHand
   type: State

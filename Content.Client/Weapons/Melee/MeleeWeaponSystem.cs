@@ -171,7 +171,7 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
         }
 
         // Heavy attack.
-        if (altDown == BoundKeyState.Down)
+        if (altDown == BoundKeyState.Down && !HasComp<UCFIntentComponent>(entity)) // UCF14: right-click is the tile menu
         {
             // If it's an unarmed attack then do a disarm
             if (weapon.AltDisarm && weaponUid == entity)

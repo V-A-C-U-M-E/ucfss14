@@ -137,6 +137,7 @@ public sealed class RulesKeyRebindMergeRegressionTest : GameTest
                     UCFKeyFunctions.IntentGrab, // UCF14
                     UCFKeyFunctions.IntentHarm, // UCF14
                     UCFKeyFunctions.IntentCycle, // UCF14
+                    UCFKeyFunctions.TileContents, // UCF14
                     CMKeyFunctions.CMHolsterPrimary,
                     CMKeyFunctions.CMHolsterSecondary,
                     CMKeyFunctions.CMHolsterTertiary,
