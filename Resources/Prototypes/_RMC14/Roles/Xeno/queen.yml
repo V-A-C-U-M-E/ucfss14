@@ -32,7 +32,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: CMU14/Mobs/Xenos/Queen/queen.rsi
+    sprite: UCF14/Mobs/Xenos/Queen/queen.rsi # UCF14
     layers:
     - state: alive
       scale: 0.5, 0.5
