@@ -12,4 +12,5 @@ public sealed class UCFKeyFunctions
     public static readonly BoundKeyFunction IntentHarm = "UCFIntentHarm";
     public static readonly BoundKeyFunction IntentCycle = "UCFIntentCycle";
     public static readonly BoundKeyFunction TileContents = "UCFTileContents";
+    public static readonly BoundKeyFunction Resist = "UCFResist";
 }

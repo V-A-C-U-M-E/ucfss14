@@ -8,3 +8,4 @@ ui-options-function-ucf-intent-grab = Grab intent
 ui-options-function-ucf-intent-harm = Harm intent
 ui-options-function-ucf-intent-cycle = Cycle intent
 ui-options-function-ucf-tile-contents = List tile contents
+ui-options-function-ucf-resist = Resist

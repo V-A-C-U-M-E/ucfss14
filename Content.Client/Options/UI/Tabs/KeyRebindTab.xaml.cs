@@ -268,6 +268,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(UCFKeyFunctions.IntentHarm); // UCF14
             AddButton(UCFKeyFunctions.IntentCycle); // UCF14
             AddButton(UCFKeyFunctions.TileContents); // UCF14
+            AddButton(UCFKeyFunctions.Resist); // UCF14
             AddButton(CMKeyFunctions.CMHolsterPrimary);
             AddButton(CMKeyFunctions.CMHolsterSecondary);
             AddButton(CMKeyFunctions.CMHolsterTertiary);

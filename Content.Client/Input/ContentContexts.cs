@@ -157,6 +157,7 @@ namespace Content.Client.Input
             human.AddFunction(UCFKeyFunctions.IntentHarm); // UCF14
             human.AddFunction(UCFKeyFunctions.IntentCycle); // UCF14
             human.AddFunction(UCFKeyFunctions.TileContents); // UCF14
+            human.AddFunction(UCFKeyFunctions.Resist); // UCF14
             human.AddFunction(CMKeyFunctions.CMUniqueAction);
             human.AddFunction(CMKeyFunctions.CMHolsterPrimary);
             human.AddFunction(CMKeyFunctions.CMHolsterSecondary);

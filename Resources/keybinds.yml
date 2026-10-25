@@ -45,8 +45,11 @@ binds:
   type: State
   key: S
 - function: Walk
+  type: Toggle
+  key: Slash
+- function: UCFResist
   type: State
-  key: Shift
+  key: B
 # Shuttle
 - function: ShuttleStrafeUp
   type: State
@@ -139,6 +142,7 @@ binds:
 - function: FocusConsoleChatWindow
   type: State
   key: Slash
+  mod1: Control
 - function: EditorLinePlace
   type: State
   key: MouseLeft
