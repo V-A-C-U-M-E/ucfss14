@@ -31,8 +31,7 @@ binds:
   key: F3
 - function: HideUI
   type: Toggle
-  mod1: Shift
-  key: F4
+  key: F12
 - function: MoveUp
   type: State
   key: W
@@ -74,21 +73,27 @@ binds:
 - function: CameraRotateLeft
   type: State
   key: NumpadNum7
+  mod1: Control
 - function: CameraRotateRight
   type: State
   key: NumpadNum9
+  mod1: Control
 - function: CameraReset
   type: State
   key: NumpadNum8
+  mod1: Control
 - function: ZoomOut
   type: State
   key: NumpadNum4
+  mod1: Control
 - function: ZoomIn
   type: State
   key: NumpadNum6
+  mod1: Control
 - function: ResetZoom
   type: State
   key: NumpadNum5
+  mod1: Control
 # Misc
 - function: ShowEscapeMenu
   type: State
@@ -112,8 +117,7 @@ binds:
   key: Period
 - function: FocusEmote
   type: State
-  mod1: Shift
-  key: Apostrophe
+  key: M
 - function: FocusWhisperChatWindow
   type: State
   key: Comma
@@ -122,11 +126,10 @@ binds:
   key: SemiColon
 - function: FocusLOOCWindow
   type: State
-  mod1: Shift
-  key: Num9
+  key: L
 - function: FocusOOCWindow
   type: State
-  key: LBracket
+  key: O
 - function: FocusAdminChatWindow
   type: State
   key: RBracket
@@ -212,17 +215,10 @@ binds:
   key: MouseLeft
   canFocus: true
   mod1: Shift
-- function: ActivateItemInWorld
-  type: State
-  key: E
 - function: AltActivateItemInWorld
   type: State
   key: MouseLeft
   canFocus: true
-  mod1: Alt
-- function: AltActivateItemInWorld # secondary binding
-  type: State
-  key: E
   mod1: Alt
 - function: ThrowItemInHand
   type: State
@@ -257,8 +253,8 @@ binds:
   mod1: Shift
 - function: SmartEquipBelt
   type: State
-  key: E
-  mod1: Shift
+  key: B
+  mod1: Control
 - function: SmartEquipPocket1
   type: State
   key: N
@@ -277,7 +273,8 @@ binds:
 - function: OpenBelt
   type: State
   key: V
-  mod1: Shift
+  mod1: Control
+  mod2: Shift
 - function: ShowDebugConsole
   type: State
   key: Tilde
@@ -720,26 +717,25 @@ binds:
   key: Space
 - function: CMHolsterPrimary
   type: State
-  key: F
+  key: E
 - function: CMHolsterSecondary
   type: State
-  key: F
+  key: E
   mod1: Shift
 - function: CMHolsterTertiary
   type: State
-  key: F
+  key: E
   mod1: Control
 - function: CMHolsterQuaternary
   type: State
-  key: F
+  key: E
   mod1: Alt
 - function: CMXenoWideSwing
   type: State
   key: Space
 - function: RMCPickUpDroppedItems
   type: State
-  key: R
-  mod1: Control
+  key: F
 - function: RMCInteractWithOtherHand
   type: State
   key: C
@@ -763,3 +759,31 @@ binds:
   type: State
   key: H
   mod1: Alt
+- function: UCFToggleWeaponSafety
+  type: State
+  key: V
+  mod1: Shift
+- function: CMUTargetBodyZoneHead
+  type: State
+  key: NumpadNum8
+- function: CMUTargetBodyZoneTorso
+  type: State
+  key: NumpadNum5
+- function: CMUTargetBodyZoneRightArm
+  type: State
+  key: NumpadNum4
+- function: CMUTargetBodyZoneLeftArm
+  type: State
+  key: NumpadNum6
+- function: CMUTargetBodyZoneRightLeg
+  type: State
+  key: NumpadNum1
+- function: CMUTargetBodyZoneLeftLeg
+  type: State
+  key: NumpadNum3
+- function: CMUCycleBodyZoneTarget
+  type: State
+  key: NumpadNum7
+- function: CMUCycleBodyZoneTargetReverse
+  type: State
+  key: NumpadNum9

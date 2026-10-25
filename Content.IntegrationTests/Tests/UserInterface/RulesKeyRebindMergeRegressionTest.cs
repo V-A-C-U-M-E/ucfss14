@@ -7,6 +7,7 @@ using Content.Client.Stylesheets;
 using Content.IntegrationTests.Fixtures;
 using Content.Shared.CMU14.Input;
 using Content.Shared._RMC14.Input;
+using Content.Shared.UCF14.Input; // UCF14
 using Content.Shared.CCVar;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
@@ -130,6 +131,7 @@ public sealed class RulesKeyRebindMergeRegressionTest : GameTest
                     CMKeyFunctions.RMCFieldStripHeldItem,
                     CMKeyFunctions.RMCCycleFireMode,
                     CMKeyFunctions.CMUniqueAction,
+                    UCFKeyFunctions.ToggleWeaponSafety, // UCF14
                     CMKeyFunctions.CMHolsterPrimary,
                     CMKeyFunctions.CMHolsterSecondary,
                     CMKeyFunctions.CMHolsterTertiary,

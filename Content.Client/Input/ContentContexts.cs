@@ -1,4 +1,5 @@
 using Content.Shared._RMC14.Input;
+using Content.Shared.UCF14.Input; // UCF14
 using Content.Shared.CMU14.Input;
 using Content.Shared.Input;
 using Robust.Shared.Input;
@@ -149,6 +150,7 @@ namespace Content.Client.Input
             human.AddFunction(CMKeyFunctions.RMCActivateAttachableUnderbarrel);
             human.AddFunction(CMKeyFunctions.RMCFieldStripHeldItem);
             human.AddFunction(CMKeyFunctions.RMCCycleFireMode);
+            human.AddFunction(UCFKeyFunctions.ToggleWeaponSafety); // UCF14
             human.AddFunction(CMKeyFunctions.CMUniqueAction);
             human.AddFunction(CMKeyFunctions.CMHolsterPrimary);
             human.AddFunction(CMKeyFunctions.CMHolsterSecondary);

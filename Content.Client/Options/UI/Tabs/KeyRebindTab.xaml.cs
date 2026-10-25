@@ -5,6 +5,7 @@ using Content.Shared.CMU14.Input;
 using Content.Shared.CMU14.Inventory;
 using Content.Shared.CMU14.ZLevels; // CMU14
 using Content.Shared._RMC14.Input;
+using Content.Shared.UCF14.Input; // UCF14
 using Content.Shared.CCVar;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Input;
@@ -260,6 +261,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(CMKeyFunctions.RMCFieldStripHeldItem);
             AddButton(CMKeyFunctions.RMCCycleFireMode);
             AddButton(CMKeyFunctions.CMUniqueAction);
+            AddButton(UCFKeyFunctions.ToggleWeaponSafety); // UCF14
             AddButton(CMKeyFunctions.CMHolsterPrimary);
             AddButton(CMKeyFunctions.CMHolsterSecondary);
             AddButton(CMKeyFunctions.CMHolsterTertiary);
