@@ -8,6 +8,7 @@ using Content.Client.Inventory;
 using Content.Client.Storage.Systems;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Gameplay;
+using Content.Client.UserInterface.Systems.Hands.Controls; // UCF14
 using Content.Client.UserInterface.Systems.Inventory.Controls;
 using Content.Client.UserInterface.Systems.Inventory.Widgets;
 using Content.Client.UserInterface.Systems.Inventory.Windows;
@@ -100,6 +101,7 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
     {
         var button = new SlotButton(data);
         button.Pressed += ItemPressed;
+        button.Unpressed += ItemUnpressed; // UCF14
         button.StoragePressed += StoragePressed;
         button.Hover += SlotButtonHovered;
 
@@ -276,8 +278,65 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
         _inventorySystem.OnSpriteUpdate -= SpriteUpdated;
     }
 
+    private SlotControl? _pressedSlot; // UCF14
+
+    private void ItemUnpressed(GUIBoundKeyEventArgs args, SlotControl control) // UCF14
+    {
+        if (args.Function != EngineKeyFunctions.UIClick || _pressedSlot != control)
+            return;
+
+        _pressedSlot = null;
+        args.Handle();
+
+        for (var over = UIManager.MouseGetControl(args.PointerLocation); over != null; over = over.Parent)
+        {
+            if (over == control)
+            {
+                SlotClicked(control);
+                return;
+            }
+
+            if (over is HandButton hand)
+            {
+                DragToHand(control, hand);
+                return;
+            }
+        }
+    }
+
+    private void SlotClicked(SlotControl control) // UCF14
+    {
+        var slot = control.SlotName;
+
+        if (_cfg.GetCVar(CMUInventoryCVars.ClickOpensWornStorage) &&
+            _handsSystem.GetActiveHandEntity() == null &&
+            TryOpenWornStorage(slot))
+        {
+            return;
+        }
+
+        _inventorySystem.UIInventoryActivate(slot);
+    }
+
+    private void DragToHand(SlotControl slot, HandButton hand) // UCF14
+    {
+        if (hand.Entity != null)
+            return;
+
+        _handsSystem.UIHandActivate(hand.SlotName);
+        _inventorySystem.UIInventoryActivate(slot.SlotName);
+    }
+
     private void ItemPressed(GUIBoundKeyEventArgs args, SlotControl control)
     {
+        // UCF14: a click on an occupied slot is decided on release so the item can be dragged to a hand
+        if (args.Function == EngineKeyFunctions.UIClick && control.Entity != null)
+        {
+            _pressedSlot = control;
+            args.Handle();
+            return;
+        }
+
         var slot = control.SlotName;
 
         // CMU14 Begin: open worn storage by key, or by an empty-handed click when the player opts in

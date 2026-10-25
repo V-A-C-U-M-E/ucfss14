@@ -132,6 +132,11 @@ public sealed class RulesKeyRebindMergeRegressionTest : GameTest
                     CMKeyFunctions.RMCCycleFireMode,
                     CMKeyFunctions.CMUniqueAction,
                     UCFKeyFunctions.ToggleWeaponSafety, // UCF14
+                    UCFKeyFunctions.IntentHelp, // UCF14
+                    UCFKeyFunctions.IntentDisarm, // UCF14
+                    UCFKeyFunctions.IntentGrab, // UCF14
+                    UCFKeyFunctions.IntentHarm, // UCF14
+                    UCFKeyFunctions.IntentCycle, // UCF14
                     CMKeyFunctions.CMHolsterPrimary,
                     CMKeyFunctions.CMHolsterSecondary,
                     CMKeyFunctions.CMHolsterTertiary,

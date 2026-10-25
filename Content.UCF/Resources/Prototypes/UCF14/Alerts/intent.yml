@@ -1,0 +1,16 @@
+- type: alert
+  id: UCFIntent
+  icons:
+  - sprite: /Textures/UCF14/Interface/Alerts/intents.rsi
+    state: help
+  - sprite: /Textures/UCF14/Interface/Alerts/intents.rsi
+    state: disarm
+  - sprite: /Textures/UCF14/Interface/Alerts/intents.rsi
+    state: grab
+  - sprite: /Textures/UCF14/Interface/Alerts/intents.rsi
+    state: harm
+  name: Intent
+  description: Click to cycle help, disarm, grab and harm. Keys 1 to 4 pick one directly.
+  clickEvent: !type:UCFIntentClickedAlertEvent
+  minSeverity: 0
+  maxSeverity: 3

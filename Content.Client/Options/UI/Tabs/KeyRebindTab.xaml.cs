@@ -262,6 +262,11 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(CMKeyFunctions.RMCCycleFireMode);
             AddButton(CMKeyFunctions.CMUniqueAction);
             AddButton(UCFKeyFunctions.ToggleWeaponSafety); // UCF14
+            AddButton(UCFKeyFunctions.IntentHelp); // UCF14
+            AddButton(UCFKeyFunctions.IntentDisarm); // UCF14
+            AddButton(UCFKeyFunctions.IntentGrab); // UCF14
+            AddButton(UCFKeyFunctions.IntentHarm); // UCF14
+            AddButton(UCFKeyFunctions.IntentCycle); // UCF14
             AddButton(CMKeyFunctions.CMHolsterPrimary);
             AddButton(CMKeyFunctions.CMHolsterSecondary);
             AddButton(CMKeyFunctions.CMHolsterTertiary);

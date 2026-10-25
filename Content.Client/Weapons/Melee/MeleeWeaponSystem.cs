@@ -8,6 +8,8 @@ using Content.Shared.CCVar;
 using Content.Shared.Effects;
 using Content.Shared.Vehicle.Components; // CMU14
 using Content.Shared.IdentityManagement;
+using Content.Shared.Mobs.Components; // UCF14
+using Content.Shared.UCF14.Intents; // UCF14
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Components;
 using Content.Shared.Weapons.Melee.Events;
@@ -42,6 +44,8 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
     // RMC14
     [Dependency] private RMCLagCompensationSystem _rmcLagCompensation = default!;
     [Dependency] private RMCMeleeWeaponSystem _rmcMeleeWeapon = default!;
+    [Dependency] private UCFIntentSystem _ucfIntent = default!; // UCF14
+    private bool _ucfUseWasDown; // UCF14
 
     public override void Initialize()
     {
@@ -149,6 +153,23 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
             return;
         }
 
+        // UCF14: unarmed clicks on a mob follow the selected intent
+        var ucfUseEdge = useDown == BoundKeyState.Down && !_ucfUseWasDown;
+        _ucfUseWasDown = useDown == BoundKeyState.Down;
+        if (weaponUid == entity && useDown == BoundKeyState.Down && UCFClickedMob(entity, mousePos))
+        {
+            switch (_ucfIntent.GetIntent(entity))
+            {
+                case UCFIntent.Disarm:
+                    ClientDisarm(entity, mousePos, coordinates, weapon);
+                    return;
+                case UCFIntent.Grab:
+                    if (ucfUseEdge)
+                        ClientGrab(mousePos);
+                    return;
+            }
+        }
+
         // Heavy attack.
         if (altDown == BoundKeyState.Down)
         {
@@ -233,6 +254,20 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
         _rmcLagCompensation.SendLastRealTick(); // RMC14
         var maxTargets = component.MaxTargets ?? MaxTargets;
         RaisePredictiveEvent(new HeavyAttackEvent(GetNetEntity(meleeUid), entities.GetRange(0, Math.Min(maxTargets, entities.Count)), GetNetCoordinates(coordinates)));
+    }
+
+    private bool UCFClickedMob(EntityUid attacker, MapCoordinates mousePos)
+    {
+        return _stateManager.CurrentState is GameplayStateBase screen &&
+               screen.GetClickedEntity(mousePos) is { } target &&
+               target != attacker &&
+               HasComp<MobStateComponent>(target);
+    }
+
+    private void ClientGrab(MapCoordinates mousePos)
+    {
+        if (_stateManager.CurrentState is GameplayStateBase screen && screen.GetClickedEntity(mousePos) is { } target)
+            RaisePredictiveEvent(new UCFGrabAttemptEvent(GetNetEntity(target)));
     }
 
     private void ClientDisarm(EntityUid attacker, MapCoordinates mousePos, EntityCoordinates coordinates, MeleeWeaponComponent meleeComponent)

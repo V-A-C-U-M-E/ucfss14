@@ -151,6 +151,11 @@ namespace Content.Client.Input
             human.AddFunction(CMKeyFunctions.RMCFieldStripHeldItem);
             human.AddFunction(CMKeyFunctions.RMCCycleFireMode);
             human.AddFunction(UCFKeyFunctions.ToggleWeaponSafety); // UCF14
+            human.AddFunction(UCFKeyFunctions.IntentHelp); // UCF14
+            human.AddFunction(UCFKeyFunctions.IntentDisarm); // UCF14
+            human.AddFunction(UCFKeyFunctions.IntentGrab); // UCF14
+            human.AddFunction(UCFKeyFunctions.IntentHarm); // UCF14
+            human.AddFunction(UCFKeyFunctions.IntentCycle); // UCF14
             human.AddFunction(CMKeyFunctions.CMUniqueAction);
             human.AddFunction(CMKeyFunctions.CMHolsterPrimary);
             human.AddFunction(CMKeyFunctions.CMHolsterSecondary);
