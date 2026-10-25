@@ -1,0 +1,76 @@
+- type: damageModifierSet
+  id: UCFSmartpackProtective
+  coefficients:
+    Blunt: 0.2
+    Slash: 0.2
+    Piercing: 0.2
+    Heat: 0.2
+    Shock: 0.2
+    Cold: 0.2
+
+- type: entity
+  parent: ActionMarineBase
+  id: UCFActionSmartpackProtective
+  name: Protective Form
+  description: Harden the exoskeleton for a short time. You take far less damage but cannot attack, shoot or throw.
+  components:
+  - type: Action
+    useDelay: 0.5
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Objects/Clothing/Back/Smartpacks/V42/smartpack.rsi
+      state: icon
+      map: ["enum.ActionVisuals.Icon"]
+  - type: InstantAction
+    event: !type:UCFSmartpackProtectiveEvent
+  - type: ActionUserWhitelist
+    whitelist:
+      components:
+      - Synth
+
+- type: entity
+  parent: ActionMarineBase
+  id: UCFActionSmartpackImmobile
+  name: Immobile Form
+  description: Anchor yourself in place so you cannot be moved or pulled. Use it again to move.
+  components:
+  - type: Action
+    useDelay: 0.5
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Objects/Clothing/Back/Smartpacks/V42/smartpack.rsi
+      state: icon
+      map: ["enum.ActionVisuals.Icon"]
+  - type: InstantAction
+    event: !type:UCFSmartpackImmobileEvent
+  - type: ActionUserWhitelist
+    whitelist:
+      components:
+      - Synth
+
+- type: entity
+  parent: ActionMarineBase
+  id: UCFActionSmartpackRepair
+  name: Repair Form
+  description: Spend charge on a slow self-repair that mends brute and burn damage.
+  components:
+  - type: Action
+    useDelay: 0.5
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Objects/Clothing/Back/Smartpacks/V42/smartpack.rsi
+      state: icon
+      map: ["enum.ActionVisuals.Icon"]
+  - type: InstantAction
+    event: !type:UCFSmartpackRepairEvent
+  - type: ActionUserWhitelist
+    whitelist:
+      components:
+      - Synth
+
+- type: entity
+  parent: RMCSmartpackA1Base
+  id: UCFSmartpackA1DarkBlue
+  components:
+  - type: Sprite
+    sprite: UCF14/Objects/Clothing/Back/Smartpacks/smartpack_a1_darkblue.rsi

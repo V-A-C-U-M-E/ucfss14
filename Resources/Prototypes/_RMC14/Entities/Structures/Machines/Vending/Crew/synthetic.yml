@@ -113,6 +113,8 @@
         name: S-V42A1 smartpack, tan
       - id: RMCSmartpackA1White
         name: S-V42A1 smartpack, white
+      - id: UCFSmartpackA1DarkBlue # UCF14
+        name: S-V42A1 smartpack, dark blue
     - name: Belt
       choices: { CMBelt: 1 }
       entries:

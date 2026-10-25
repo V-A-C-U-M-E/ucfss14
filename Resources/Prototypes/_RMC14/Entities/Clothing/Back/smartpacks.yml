@@ -86,6 +86,14 @@
     blacklist:
       components:
       - Xeno
+  - type: UCFSmartpack # UCF14
+  - type: ActionGrant # UCF14
+    actions:
+    - UCFActionSmartpackProtective
+    - UCFActionSmartpackImmobile
+    - UCFActionSmartpackRepair
+  - type: ItemActionGrant # UCF14
+    activeIfWorn: true
 
 - type: entity
   parent: RMCSmartpackBase

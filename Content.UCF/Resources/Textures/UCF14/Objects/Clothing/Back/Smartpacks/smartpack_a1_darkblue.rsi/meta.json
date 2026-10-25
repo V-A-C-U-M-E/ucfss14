@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from the UCF13 repository at icons/obj/items/clothing/backpack/smartpack.dmi and icons/mob/humans/onmob/clothing/back/smartpack.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "closed"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+ucf-smartpack-charge = The current charge reads {$charge}/{$max}.
+ucf-smartpack-charge-report = The current charge reads {$charge}/{$max}.
+ucf-smartpack-unauthorized = {CAPITALIZE(THE($pack))} beeps, "Unauthorized user!"
+ucf-smartpack-unavailable = You cannot use {THE($pack)} right now.
+ucf-smartpack-low-charge = There is a lack of charge for that action. Charge: {$charge}/{$cost}
+ucf-smartpack-protective-on = {CAPITALIZE(THE($pack))} beeps, "You are now protected, but unable to attack."
+ucf-smartpack-protective-off = {CAPITALIZE(THE($pack))} beeps, "The protection wears off."
+ucf-smartpack-immobile-on = {CAPITALIZE(THE($pack))} beeps, "You are anchored in place and cannot be moved."
+ucf-smartpack-immobile-off = {CAPITALIZE(THE($pack))} beeps, "You can now move again."
+ucf-smartpack-no-damage = {CAPITALIZE(THE($pack))} beeps, "No noticeable damage. Procedure cancelled."
+ucf-smartpack-repair-start = {CAPITALIZE(THE($pack))} beeps, "Beginning to carefully examine your sustained damage."
+ucf-smartpack-repair-cancelled = {CAPITALIZE(THE($pack))} beeps, "Repair process was cancelled."
+ucf-smartpack-repair-done = {CAPITALIZE(THE($pack))} beeps, "Completed the repairing process. Charge now reads {$charge}/{$max}."
+ucf-smartpack-apc-broken = The APC's power currents surge erratically, damaging your chassis!
+ucf-smartpack-apc-empty = There is no charge to draw from that APC.
+ucf-smartpack-apc-full = {CAPITALIZE(THE($pack))} is already fully charged.
+ucf-smartpack-apc-charged = You slot your fingers into the APC interface and siphon off some of the stored charge. {CAPITALIZE(THE($pack))} now has {$charge}/{$max}.
