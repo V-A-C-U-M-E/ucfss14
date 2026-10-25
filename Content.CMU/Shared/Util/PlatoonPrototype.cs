@@ -109,6 +109,9 @@ public sealed partial class PlatoonPrototype : IPrototype
     [DataField("jobSlotOverride")]
     public Dictionary<PlatoonJobClass, int> JobSlotOverride { get; private set; } = new();
 
+    [DataField]
+    public bool ShipJobsOnly { get; private set; } // UCF14: the ship station supplies the whole roster
+
     [DataField("CompatibleDropships")]
     public List<ResPath> CompatibleDropships { get; private set; } = new();
 

@@ -29,6 +29,7 @@
     - /Maps/CMU14/Dropships/ud_6.yml
   possibleships:
       - UCFAlmayer # UCF14
+  shipJobsOnly: true # UCF14
   techTree: CMUIntelTechTree_UA
 
 - type: platoon

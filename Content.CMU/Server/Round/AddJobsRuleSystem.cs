@@ -57,6 +57,13 @@ public sealed partial class AddJobsRuleSystem : GameRuleSystem<AddJobsRuleCompon
             }
         }
 
+        // UCF14: the ship station supplies the whole roster, so this rule adds nothing
+        if (platoon != null && platoon.ShipJobsOnly)
+        {
+            component.Jobs = null;
+            return;
+        }
+
         // If the platoon has a jobSlotOverride, use ONLY those jobs and skip all other job logic
         if (platoon != null && platoon.JobSlotOverride.Count > 0)
         {

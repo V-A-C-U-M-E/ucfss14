@@ -48,6 +48,7 @@
   - RemoveAllJobs
   - AddGovfor
   - AddGovforAuxiliaryStaffDistress
+  - UCFUscmRoster # UCF14
 
 - type: gamePreset
   id: Insurgency
