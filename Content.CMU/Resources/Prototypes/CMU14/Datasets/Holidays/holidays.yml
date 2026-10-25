@@ -1,12 +1,4 @@
 - type: holiday
-  id: CMUBirthday
-  beginDay: 11
-  beginMonth: November
-  greet:
-    !type:Custom
-    text: holiday-custom-cmu-birthday
-
-- type: holiday
   id: CMUAlienDay
   name: holiday-name-cmu-alien-day
   beginDay: 26

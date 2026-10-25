@@ -1,4 +1,4 @@
-﻿rmc-tips-1 = CMU is 'first contact', that means that you do not know about the Xenomorph XX-121 species unless stated otherwise.
+﻿rmc-tips-1 = UCF is 'first contact', that means that you do not know about the Xenomorph XX-121 species unless stated otherwise.
 rmc-tips-2 = You can put screwdrivers, cigarettes, and some other things in an ear slot.
 rmc-tips-3 = By right clicking storage items, you can change their on-click behavior, such as clicking to take a magazine from a belt.
 rmc-tips-4 = You can grab items from second-level storage, such as a bandage in a first aid kit stored inside a satchel.
@@ -56,7 +56,7 @@ rmc-tips-55 = Check perma-dead people (skull icon on medhud) for useful gear, su
 rmc-tips-56 = Always check for traps beneath loose objects and inside containers -- it could save your life.
 rmc-tips-57 = Bring a fire extinguisher, it might just save someone's life. They can remove flames that block a push, remove acid from people, as well as put out people on fire.
 rmc-tips-58 = Trading your life for a Xenomorph's is almost always worth it.
-rmc-tips-59 = CMU has a preference for stories over gameplay, this means it is not a skill test. Defeat is a tragedy, not a failure.
+rmc-tips-59 = UCF has a preference for stories over gameplay, this means it is not a skill test. Defeat is a tragedy, not a failure.
 rmc-tips-60 = Always clear weeds and Xenomorph structures as you advance.
 rmc-tips-61 = Try not to block off pushes when using a flamethrower.
 rmc-tips-62 = Recover bodies whenever possible. Even if someone is unrevivable, useful gear and ammunition can still be salvaged.

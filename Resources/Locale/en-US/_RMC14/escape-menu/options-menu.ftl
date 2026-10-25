@@ -1,4 +1,4 @@
-ui-options-header-rmc = CMU
+ui-options-header-rmc = UCF
 
 ui-options-function-rmc-activate-attachable-barrel = Activate barrel attachment
 ui-options-function-rmc-activate-attachable-rail = Activate rail attachment

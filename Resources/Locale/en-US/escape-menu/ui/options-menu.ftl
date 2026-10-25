@@ -8,7 +8,7 @@ ui-options-tab-controls = Controls
 ui-options-tab-audio = Audio
 ui-options-tab-network = Network
 ui-options-tab-misc = General
-ui-options-tab-cmu = CMU
+ui-options-tab-cmu = UCF
 
 ui-options-apply = Save & apply
 ui-options-reset-all = Reset changed
@@ -363,7 +363,7 @@ cmd-options-help = Usage: options [tab]
 
 ## Accessibility menu
 
-ui-options-accessability-header-cmu = CMU Specific
+ui-options-accessability-header-cmu = UCF Specific
 ui-options-accessability-header-visuals = Visuals
 ui-options-accessability-header-content = Content
 ui-options-accessability-header-announcements = Announcements

@@ -7,13 +7,13 @@ game-ticker-unknown-role = Unknown
 game-ticker-delay-start = Round start has been delayed for {$seconds} seconds.
 game-ticker-pause-start = Round start has been paused.
 game-ticker-pause-start-resumed = Round start countdown is now resumed.
-game-ticker-player-join-game-message = Welcome to CMU! If this is your first time playing, be sure to read the game rules, and don't be afraid to ask for help in LOOC (local OOC) or OOC (usually available only between rounds).
+game-ticker-player-join-game-message = Welcome to UCF! If this is your first time playing, be sure to read the game rules, and don't be afraid to ask for help in LOOC (local OOC) or OOC (usually available only between rounds).
 # The lobby title, shown as a heading beside SERVER INFO. Rendered as plain text, so do NOT add
 # markup tags here - they would show literally. Everything else is sent as structured fields
 # (GetRoundInfoFields in GameTicker.Lobby.cs) and drawn as a real table by the lobby's ServerInfo
 # control, so it stays aligned at any panel width. Headings are the lobby-info-* keys below.
-game-ticker-get-info-text = Colonial Marines Universe
-game-ticker-get-info-preround-text = Colonial Marines Universe
+game-ticker-get-info-text = United Colonial Forces
+game-ticker-get-info-preround-text = United Colonial Forces
 
 # Column headings for the lobby round-info table.
 lobby-info-govfor-ship = GOVFOR SHIP
