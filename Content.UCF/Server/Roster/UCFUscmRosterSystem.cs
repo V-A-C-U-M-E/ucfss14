@@ -218,12 +218,18 @@ public sealed class UCFUscmRosterSystem : GameRuleSystem<UCFUscmRosterRuleCompon
             return (_random.Pick(points), squad);
 
         var pointsQuery = EntityQueryEnumerator<SpawnPointComponent>();
+        var anyJob = new List<EntityUid>();
         var late = new List<EntityUid>();
         while (pointsQuery.MoveNext(out var uid, out var point))
         {
-            if (point.SpawnType == SpawnPointType.LateJoin)
+            if (point.SpawnType == SpawnPointType.Job)
+                anyJob.Add(uid);
+            else if (point.SpawnType == SpawnPointType.LateJoin)
                 late.Add(uid);
         }
+
+        if (anyJob.Count > 0)
+            return (_random.Pick(anyJob), squad);
 
         return late.Count > 0 ? (_random.Pick(late), squad) : null;
     }

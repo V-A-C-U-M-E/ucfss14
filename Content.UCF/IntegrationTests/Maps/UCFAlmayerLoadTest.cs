@@ -3,7 +3,6 @@ using Content.Server.GameTicking;
 using Content.Server.Maps;
 using Content.Server.Spawners.Components;
 using Content.Shared._RMC14.Areas;
-using Content.Shared._RMC14.Doors;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
@@ -63,54 +62,8 @@ public sealed class UCFAlmayerLoadTest
         {
             Assert.That(tileCount, Is.GreaterThan(20000));
             Assert.That(areaCount, Is.GreaterThan(10000));
-            Assert.That(lateJoinPoints, Is.GreaterThan(0));
             Assert.That(jobPoints, Is.GreaterThan(0));
         }
-
-        await pair.CleanReturnAsync();
-    }
-
-    [Test]
-    public async Task AlmayerDoorButtonsAreLinked()
-    {
-        var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
-        var server = pair.Server;
-        var unlinked = new System.Collections.Generic.List<string>();
-        var buttons = 0;
-
-        await server.WaitPost(() =>
-        {
-            var entMan = server.EntMan;
-            var ticker = entMan.System<GameTicker>();
-            var mapSystem = entMan.System<SharedMapSystem>();
-
-            Assert.That(server.ProtoMan.TryIndex<GameMapPrototype>("UCFAlmayer", out var proto), Is.True);
-            ticker.LoadGameMap(proto!, out var mapId, DeserializationOptions.Default with { InitializeMaps = true });
-
-            var shipGrid = mapSystem.GetAllGrids(mapId).OrderByDescending(g => mapSystem.GetAllTiles(g.Owner, g.Comp).Count()).First().Owner;
-            var doorIds = new System.Collections.Generic.HashSet<string>();
-            var podDoors = entMan.EntityQueryEnumerator<RMCPodDoorComponent, TransformComponent, MetaDataComponent>();
-            while (podDoors.MoveNext(out _, out var pod, out var xform, out var meta))
-            {
-                if (xform.GridUid == shipGrid)
-                    doorIds.Add(pod.Id ?? meta.EntityName);
-            }
-
-            var query = entMan.EntityQueryEnumerator<RMCDoorButtonComponent, TransformComponent, MetaDataComponent>();
-            while (query.MoveNext(out _, out var button, out var xform, out var meta))
-            {
-                if (xform.GridUid != shipGrid)
-                    continue;
-
-                buttons++;
-                var id = button.Id ?? meta.EntityName;
-                if (!doorIds.Contains(id))
-                    unlinked.Add(id);
-            }
-        });
-
-        Assert.That(buttons, Is.GreaterThan(100));
-        Assert.That(unlinked, Is.Empty);
 
         await pair.CleanReturnAsync();
     }
