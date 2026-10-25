@@ -226,8 +226,7 @@ binds:
   mod1: Alt
 - function: ThrowItemInHand
   type: State
-  key: Q
-  mod1: Control
+  key: R
 - function: TryPullObject
   type: State
   canFocus: true
@@ -740,6 +739,7 @@ binds:
 - function: RMCPickUpDroppedItems
   type: State
   key: R
+  mod1: Control
 - function: RMCInteractWithOtherHand
   type: State
   key: C

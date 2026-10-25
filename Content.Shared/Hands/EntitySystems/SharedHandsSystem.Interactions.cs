@@ -108,7 +108,7 @@ public abstract partial class SharedHandsSystem : EntitySystem
     private bool DropPressed(ICommonSession? session, EntityCoordinates coords, EntityUid netEntity)
     {
         if (TryComp(session?.AttachedEntity, out HandsComponent? hands) && hands.ActiveHandId != null)
-            TryDrop((session.AttachedEntity.Value, hands), hands.ActiveHandId, coords);
+            TryDrop((session.AttachedEntity.Value, hands), hands.ActiveHandId, Transform(session.AttachedEntity.Value).Coordinates); // UCF14: drop at the feet
 
         // always send to server.
         return false;

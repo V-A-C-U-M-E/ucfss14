@@ -18,6 +18,7 @@ namespace Content.Shared.Movement.Systems
         private float _frictionModifier;
         private float _airDamping;
         private float _offGridDamping;
+        private float _accelerationModifier = 1f; // UCF14
 
         public override void Initialize()
         {
@@ -29,6 +30,7 @@ namespace Content.Shared.Movement.Systems
             Subs.CVar(_configManager, CCVars.TileFrictionModifier, value => _frictionModifier = value, true);
             Subs.CVar(_configManager, CCVars.AirFriction, value => _airDamping = value, true);
             Subs.CVar(_configManager, CCVars.OffgridFriction, value => _offGridDamping = value, true);
+            Subs.CVar(_configManager, CCVars.UCFAccelerationModifier, value => _accelerationModifier = value, true); // UCF14
         }
 
         private void OnModMapInit(Entity<MovementSpeedModifierComponent> ent, ref MapInitEvent args)
@@ -39,7 +41,7 @@ namespace Content.Shared.Movement.Systems
             ent.Comp.WeightlessFriction = _airDamping * ent.Comp.BaseWeightlessFriction;
             ent.Comp.WeightlessFrictionNoInput = _airDamping * ent.Comp.BaseWeightlessFriction;
             ent.Comp.OffGridFriction = _offGridDamping * ent.Comp.BaseWeightlessFriction;
-            ent.Comp.Acceleration = ent.Comp.BaseAcceleration;
+            ent.Comp.Acceleration = ent.Comp.BaseAcceleration * _accelerationModifier; // UCF14
             ent.Comp.Friction = _frictionModifier * MovementSpeedModifierComponent.DefaultFriction * ent.Comp.BaseFriction;
             ent.Comp.FrictionNoInput = _frictionModifier * MovementSpeedModifierComponent.DefaultFrictionNoInput * ent.Comp.BaseFriction;
             Dirty(ent);
@@ -205,12 +207,12 @@ namespace Content.Shared.Movement.Systems
 
             if (MathHelper.CloseTo(ev.Friction, ent.Comp.Friction)
                 && MathHelper.CloseTo(ev.FrictionNoInput, ent.Comp.FrictionNoInput)
-                && MathHelper.CloseTo(ev.Acceleration, ent.Comp.Acceleration))
+                && MathHelper.CloseTo(ev.Acceleration * _accelerationModifier, ent.Comp.Acceleration)) // UCF14
                 return;
 
             ent.Comp.Friction = _frictionModifier * ev.Friction;
             ent.Comp.FrictionNoInput = _frictionModifier * ev.FrictionNoInput;
-            ent.Comp.Acceleration = ev.Acceleration;
+            ent.Comp.Acceleration = ev.Acceleration * _accelerationModifier; // UCF14
 
             Dirty(ent);
         }
