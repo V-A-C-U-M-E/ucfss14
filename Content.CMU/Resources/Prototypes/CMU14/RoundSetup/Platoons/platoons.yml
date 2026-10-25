@@ -28,7 +28,7 @@
   compatibleFighters:
     - /Maps/CMU14/Dropships/ud_6.yml
   possibleships:
-      - USSBushRedux
+      - UCFAlmayer # UCF14
   techTree: CMUIntelTechTree_UA
 
 - type: platoon

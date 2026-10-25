@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 2026-10-25T02:02:06.504Z
-  entityCount: 29254
+  entityCount: 29259
 maps:
 - 1
 grids:
@@ -189,6 +189,12 @@ entities:
     - type: Broadphase
     - type: OccluderTree
     - type: Warship
+    - type: MapAtmosphere
+      mixture:
+        temperature: 2.725
+        volume: 2500
+        moles: {}
+        immutable: True
     - type: MapGrid
       chunks:
         0,4:
@@ -188394,4 +188400,41 @@ entities:
     components:
     - type: Transform
       pos: 89.5,167.5
+      parent: 1
+- proto: CMCargoElevator
+  entities:
+  - uid: 29255
+    components:
+    - type: Transform
+      pos: 208.5,50.5
+      parent: 1
+- proto: CMDropshipHijackDestination
+  entities:
+  - uid: 29256
+    components:
+    - type: MetaData
+      name: Hangar
+    - type: Transform
+      pos: 99.5,50.5
+      parent: 1
+  - uid: 29257
+    components:
+    - type: MetaData
+      name: Engineering - Lower deck
+    - type: Transform
+      pos: 239.5,50.5
+      parent: 1
+  - uid: 29258
+    components:
+    - type: MetaData
+      name: Engineering - Upper deck
+    - type: Transform
+      pos: 216.5,151.5
+      parent: 1
+  - uid: 29259
+    components:
+    - type: MetaData
+      name: Medical - Upper deck
+    - type: Transform
+      pos: 146.5,151.5
       parent: 1
