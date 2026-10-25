@@ -278,7 +278,8 @@
                                 <Control HorizontalExpand="True"/>
                                 <OptionButton Name="SexButton" HorizontalAlignment="Right" />
                             </BoxContainer>
-                            <BoxContainer HorizontalExpand="True">
+                            <!-- UCF14: pronoun selection hidden, gender follows sex -->
+                            <BoxContainer HorizontalExpand="True" Visible="False">
                                 <Label Text="{Loc 'humanoid-profile-editor-pronouns-label'}" />
                                 <Control HorizontalExpand="True"/>
                                 <OptionButton Name="PronounsButton" HorizontalAlignment="Right" />

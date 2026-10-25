@@ -1365,13 +1365,12 @@ namespace Content.Shared.Preferences
 
             var age = Math.Clamp(Age, speciesPrototype.MinAge, speciesPrototype.MaxAge);
 
-            var gender = Gender switch
+            // UCF14: gender follows sex
+            var gender = sex switch
             {
-                Gender.Epicene => Gender.Epicene,
-                Gender.Female => Gender.Female,
-                Gender.Male => Gender.Male,
-                Gender.Neuter => Gender.Neuter,
-                _ => Gender.Epicene // Invalid enum values.
+                Sex.Male => Gender.Male,
+                Sex.Female => Gender.Female,
+                _ => Gender.Epicene
             };
 
             string name;

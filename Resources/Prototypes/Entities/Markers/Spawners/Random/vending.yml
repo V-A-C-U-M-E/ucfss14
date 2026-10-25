@@ -34,7 +34,6 @@
       - id: VendingMachineSpaceUp
       - id: VendingMachineStarkist
 
-
 - type: entityTable
   id: ClothingVendorTable
   table: !type:GroupSelector
@@ -43,7 +42,6 @@
       weight: 4
     - id: VendingMachineWinter
       weight: 4
-    - id: VendingMachinePride
     - id: VendingMachineTheater
 
 - type: entity

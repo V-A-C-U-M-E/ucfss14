@@ -67924,13 +67924,6 @@ entities:
     - type: Transform
       parent: 60
       pos: -38.4609,19.6876
-- proto: ClothingNeckAromanticPin
-  entities:
-  - uid: 24089
-    components:
-    - type: Transform
-      parent: 60
-      pos: 83.621025,-13.51627
 - proto: ClothingNeckBling
   entities:
   - uid: 18461
@@ -67938,13 +67931,6 @@ entities:
     - type: Transform
       parent: 60
       pos: 5.9221196,-5.3832207
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 7082
-    components:
-    - type: Transform
-      parent: 60
-      pos: -40.498245,-36.02266
 - proto: ClothingNeckMantleHOP
   entities:
   - uid: 5207
@@ -118124,13 +118110,6 @@ entities:
     - type: Transform
       parent: 60
       pos: 21.334734,-11.3924055
-- proto: LGBTQHandyFlag
-  entities:
-  - uid: 9548
-    components:
-    - type: Transform
-      parent: 60
-      pos: -41.49743,-36.512333
 - proto: LightBulb
   entities:
   - uid: 19737

@@ -499,7 +499,6 @@
   - HandsBrownMarineRMC
   - HandsGreyMarineRMC
 
-
 # Food (sweets)
 - type: loadoutGroup
   id: FoodSweetsRMC
@@ -541,27 +540,6 @@
   - LimeRMC
   - OrangeRMC
   - PotatoRMC
-
-# Pins
-- type: loadoutGroup
-  id: RMCLoadoutGroupPins
-  name: rmc-loadout-group-pins
-  minLimit: 0
-  maxLimit: 13
-  loadouts:
-  - RMCPinLGBT
-  - RMCPinAromantic
-  - RMCPinAsexual
-  - RMCPinBisexual
-  - RMCPinGay
-  - RMCPinIntersex
-  - RMCPinLesbian
-  - RMCPinNonBinary
-  - RMCPinPansexual
-  - RMCPinOmnisexual
-  - RMCPinTransgender
-  - RMCPinAutism
-  - RMCPinAutismGold
 
 # Commanding Officer
 - type: loadoutGroup

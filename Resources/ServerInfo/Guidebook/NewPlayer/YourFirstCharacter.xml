@@ -20,7 +20,6 @@ This guide will assume you are creating a human, but the process is similar acro
 These include:
 - Age (18-29 for young, 30-59 for middle-aged, 60+ for old)
 - Sex (your sprite, as seen by toggling "Show clothing")
-- Pronouns (what the game will refer to you as)
 - Skin color (may be a slider or RGB depending on species)
 - Eye color (RGB)
 - Hair color (RGB)

@@ -47632,58 +47632,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 10.28999,-87.42052
-- proto: ClothingNeckCloakAce
-  entities:
-  - uid: 17323
-    components:
-    - type: Transform
-      parent: 2
-      pos: -9.488791,-1.3849742
-- proto: ClothingNeckCloakAro
-  entities:
-  - uid: 8150
-    components:
-    - type: Transform
-      parent: 2
-      pos: 39.571434,-28.464401
-    - type: CollisionWake
-      enabled: False
-    - type: Conveyed
-- proto: ClothingNeckCloakBi
-  entities:
-  - uid: 6921
-    components:
-    - type: Transform
-      parent: 2
-      pos: 57.523323,-96.46691
-- proto: ClothingNeckCloakEnby
-  entities:
-  - uid: 13645
-    components:
-    - type: Transform
-      parent: 2
-      pos: 79.02105,-25.344301
-- proto: ClothingNeckCloakGay
-  entities:
-  - uid: 17328
-    components:
-    - type: Transform
-      parent: 2
-      pos: -39.37852,-58.430256
-- proto: ClothingNeckCloakIntersex
-  entities:
-  - uid: 7509
-    components:
-    - type: Transform
-      parent: 2
-      pos: 105.5457,-45.44423
-- proto: ClothingNeckCloakLesbian
-  entities:
-  - uid: 3874
-    components:
-    - type: Transform
-      parent: 2
-      pos: 68.37186,-17.557957
 - proto: ClothingNeckCloakMoth
   entities:
   - uid: 17237
@@ -47691,13 +47639,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -31.529379,-64.33237
-- proto: ClothingNeckCloakPan
-  entities:
-  - uid: 3532
-    components:
-    - type: Transform
-      parent: 2
-      pos: 44.5,-38.5
 - proto: ClothingNeckCloakPirateCap
   entities:
   - uid: 17307
@@ -47705,13 +47646,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -38.53285,-69.49862
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 17331
-    components:
-    - type: Transform
-      parent: 2
-      pos: 77.515434,-20.379131
 - proto: ClothingNeckStethoscope
   entities:
   - uid: 6660
@@ -112350,13 +112284,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -2.5,-50.5
-- proto: VendingMachinePride
-  entities:
-  - uid: 12823
-    components:
-    - type: Transform
-      parent: 2
-      pos: 15.5,-48.5
 - proto: VendingMachineRoboDrobe
   entities:
   - uid: 16522

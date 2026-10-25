@@ -106352,13 +106352,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 61.5,79.5
-- proto: VendingMachinePride
-  entities:
-  - uid: 16572
-    components:
-    - type: Transform
-      parent: 1
-      pos: 40.5,87.5
 - proto: VendingMachineRestockSmokes
   entities:
   - uid: 17569

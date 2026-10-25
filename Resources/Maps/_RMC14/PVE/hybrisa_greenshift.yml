@@ -158009,13 +158009,6 @@ entities:
     - type: Transform
       pos: -153.5,-74.5
       parent: 1
-- proto: RMCClothingNeckLGBTPin
-  entities:
-  - uid: 7706
-    components:
-    - type: Transform
-      pos: -127.143776,-73.86431
-      parent: 1
 - proto: RMCCoatMilitiaVest
   entities:
   - uid: 4325

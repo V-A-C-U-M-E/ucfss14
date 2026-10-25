@@ -31020,20 +31020,6 @@ entities:
     - type: Transform
       pos: -53.5,-3.5
       parent: 1
-- proto: RMCClothingNeckAsexualPin
-  entities:
-  - uid: 4421
-    components:
-    - type: Transform
-      pos: -47.94254,-23.48433
-      parent: 1
-- proto: RMCClothingNeckLGBTPin
-  entities:
-  - uid: 4422
-    components:
-    - type: Transform
-      pos: -48.09879,-23.286413
-      parent: 1
 - proto: RMCCoatBomber
   entities:
   - uid: 3551

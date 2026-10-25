@@ -46460,13 +46460,6 @@ entities:
     - type: Transform
       pos: 95.5,138.5
       parent: 1
-- proto: ClothingNeckTransPin
-  entities:
-  - uid: 22
-    components:
-    - type: Transform
-      pos: 253.47504,1.1372524
-      parent: 1
 - proto: ClothingUniformJumpskirtJanimaidmini
   entities:
   - uid: 23
@@ -74533,18 +74526,6 @@ entities:
     components:
     - type: Transform
       pos: 90.5,43.5
-      parent: 1
-- proto: RMCClothingNeckLesbianPin
-  entities:
-  - uid: 5077
-    components:
-    - type: Transform
-      pos: 251.64171,1.1789191
-      parent: 1
-  - uid: 5078
-    components:
-    - type: Transform
-      pos: 253.32227,1.2344744
       parent: 1
 - proto: RMCCoatBomber
   entities:

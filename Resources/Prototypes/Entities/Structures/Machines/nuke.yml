@@ -27,8 +27,7 @@
     holidays:
       festive:
       - FestiveSeason
-      pride:
-      - PrideMonth
+      pride: []
   - type: GenericVisualizer
     visuals:
       enum.HolidayVisuals.Holiday:
@@ -147,8 +146,7 @@
     holidays:
       festive:
       - FestiveSeason
-      pride:
-      - PrideMonth
+      pride: []
   - type: GenericVisualizer
     visuals:
       enum.HolidayVisuals.Holiday:

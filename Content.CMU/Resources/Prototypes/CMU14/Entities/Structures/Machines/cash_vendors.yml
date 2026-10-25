@@ -678,58 +678,6 @@
       section: Magazines
       name: Orrery Magazine (Issue 258)
       price: 5
-    - id: RMCClothingNeckLGBTPin
-      section: Pins
-      name: LGBT Pin
-      price: 3
-    - id: RMCClothingNeckAromanticPin
-      section: Pins
-      name: Aromantic Pin
-      price: 3
-    - id: RMCClothingNeckAsexualPin
-      section: Pins
-      name: Asexual Pin
-      price: 3
-    - id: RMCClothingNeckBisexualPin
-      section: Pins
-      name: Bisexual Pin
-      price: 3
-    - id: RMCClothingNeckGayPin
-      section: Pins
-      name: Gay Pin
-      price: 3
-    - id: RMCClothingNeckIntersexPin
-      section: Pins
-      name: Intersex Pin
-      price: 3
-    - id: RMCClothingNeckLesbianPin
-      section: Pins
-      name: Lesbian Pin
-      price: 3
-    - id: RMCClothingNeckNonBinaryPin
-      section: Pins
-      name: Non-Binary Pin
-      price: 3
-    - id: RMCClothingNeckPansexualPin
-      section: Pins
-      name: Pansexual Pin
-      price: 3
-    - id: RMCClothingNeckOmnisexualPin
-      section: Pins
-      name: Omnisexual Pin
-      price: 3
-    - id: RMCClothingNeckTransPin
-      section: Pins
-      name: Trans Pin
-      price: 3
-    - id: RMCClothingNeckAutismPin
-      section: Pins
-      name: Autism Pin
-      price: 3
-    - id: RMCClothingNeckGoldAutismPin
-      section: Pins
-      name: Gold Autism Pin
-      price: 3
     - id: RMCSpaceGrunts
       section: Other
       name: Space Grunts

@@ -52843,23 +52843,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 22.5,-140.5
       parent: 1
-- proto: LGBTQFlag
-  entities:
-  - uid: 2155
-    components:
-    - type: Transform
-      pos: 123.5,-45.5
-      parent: 1
-  - uid: 2156
-    components:
-    - type: Transform
-      pos: 122.5,-45.5
-      parent: 1
-  - uid: 2157
-    components:
-    - type: Transform
-      pos: 121.5,-45.5
-      parent: 1
 - proto: Matchstick
   entities:
   - uid: 2158

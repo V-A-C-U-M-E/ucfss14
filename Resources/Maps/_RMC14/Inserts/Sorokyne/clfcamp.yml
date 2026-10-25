@@ -2845,13 +2845,6 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
-- proto: RMCClothingNeckTransPin
-  entities:
-  - uid: 689
-    components:
-    - type: Transform
-      pos: 3.5,8.5
-      parent: 1
 - proto: RMCCoatRack
   entities:
   - uid: 772

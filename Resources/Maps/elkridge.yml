@@ -58324,13 +58324,6 @@ entities:
       inSlot: neck
     - type: Physics
       canCollide: False
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 1602
-    components:
-    - type: Transform
-      parent: 2
-      pos: 58.570602,32.7099
 - proto: ClothingNeckScarfStripedBlack
   entities:
   - uid: 4040
@@ -114552,13 +114545,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -9.5,-46.5
-- proto: VendingMachinePride
-  entities:
-  - uid: 13514
-    components:
-    - type: Transform
-      parent: 2
-      pos: -23.5,-17.5
 - proto: VendingMachineRoboDrobe
   entities:
   - uid: 16162

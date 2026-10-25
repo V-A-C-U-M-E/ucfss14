@@ -72161,13 +72161,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -116.47996,12.489793
-- proto: ClothingNeckCloakLesbian
-  entities:
-  - uid: 22951
-    components:
-    - type: Transform
-      parent: 2
-      pos: -24.48211,-68.415665
 - proto: ClothingNeckClownmedal
   entities:
   - uid: 3277
@@ -72175,20 +72168,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -75.67967,-3.2953148
-- proto: ClothingNeckGoldAutismPin
-  entities:
-  - uid: 2395
-    components:
-    - type: Transform
-      parent: 2
-      pos: -21.527897,-69.71385
-  - uid: 9590
-    components:
-    - type: Transform
-      parent: 21062
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingNeckGoldmedal
   entities:
   - uid: 4302
@@ -134669,7 +134648,6 @@ entities:
       containers:
         entity_storage: !type:Container
           ents:
-          - 9590
           - 21064
           - 21063
           showEnts: False
@@ -160190,13 +160168,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -45.5,-18.5
-- proto: VendingMachinePride
-  entities:
-  - uid: 16887
-    components:
-    - type: Transform
-      parent: 2
-      pos: -60.5,-58.5
 - proto: VendingMachinePwrGame
   entities:
   - uid: 9726
