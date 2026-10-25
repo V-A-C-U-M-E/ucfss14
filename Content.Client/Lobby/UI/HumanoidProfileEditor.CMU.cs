@@ -106,6 +106,7 @@ public sealed partial class HumanoidProfileEditor
         TabContainer.SetTabVisible(CharacterDescriptionTabIndex, _allowCharacterDescription);
         TabContainer.SetTabTitle(RegulationAppearanceTabIndex,
             Loc.GetString("humanoid-profile-editor-regulation-appearance-tab"));
+        TabContainer.SetTabVisible(RegulationAppearanceTabIndex, _cfgManager.GetCVar(CCVars.UCFRegulationAppearance)); // UCF14
         TabContainer.SetTabTitle(InsurgencyTabIndex, Loc.GetString("humanoid-profile-editor-insurgency-tab"));
         TabContainer.SetTabTitle(ColonyFallTabIndex, Loc.GetString("humanoid-profile-editor-colony-fall-tab"));
         TabContainer.SetTabTitle(DistressSignalTabIndex,

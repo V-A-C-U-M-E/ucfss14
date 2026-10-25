@@ -809,6 +809,9 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         if (profile == null || !HasComp<RegulationAppearanceComponent>(uid))
             return;
 
+        if (!_configurationManager.GetCVar(CCVars.UCFRegulationAppearance)) // UCF14
+            return;
+
         if (!TryComp<HumanoidProfileComponent>(uid, out var humanoid))
             return;
 
